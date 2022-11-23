@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>The Neighbourhood</title>
+    <link rel="shortcut icon" href="./Images/favicon.png" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b656898017.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <p class="logo">THE NEIGHBOURHOOD</p>
+        <img
+          class="menu-icon"
+          src="/pages/Images/menumobile.png"
+          alt=""
+          width="40px"
+        />
+        <nav>
+          <a href="/index.html">HOME</a>
+          <a href="music.html">MUSIC</a>
+          <a href="band.html">THE BAND</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+      <div class="titular">
+        <h1>CONTACT</h1>
+      </div>
+    </header>
+    <section id="datos">
+      <div class="contenedor">
+        <div class="contact">
+          <h3>CONTACT US</h3>
+          <form action="" class="form_contact" name="form_contact">
+            <div class="contenedor_form">
+              <div class="input__group">
+                <label for="name" class="form_label">FULL NAME</label>
+                <input
+                  type="text"
+                  class="form_input"
+                  name="First Name"
+                  placeholder=" "
+                />
+                <span class="form_line"></span>
+              </div>
+
+              <div class="input__group">
+                <label for="mail" class="form_label">EMAIL ADRESS</label>
+                <input
+                  type="email"
+                  class="form_input"
+                  name="email"
+                  required
+                  placeholder=" "
+                />
+                <span class="form_line"></span>
+              </div>
+              <div class="input__group">
+                <label for="phone" class="form_label">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  class="form_input"
+                  name="phone"
+                  id="phone"
+                  placeholder=" "
+                />
+                <span class="form_line"></span>
+              </div>
+              <div class="input__group">
+                <label for="country" class="form_label">COUNTRY</label>
+                <input
+                  type="text"
+                  class="form_input"
+                  name="country"
+                  id="country"
+                  placeholder=" "
+                />
+                <span class="form_line"></span>
+              </div>
+              <div class="input__group">
+                <label for="city" class="form_label">CITY</label>
+                <input
+                  type="text"
+                  class="form_input"
+                  name="city"
+                  id="city"
+                  placeholder=" "
+                />
+                <span class="form_line"></span>
+              </div>
+              <div class="block">
+                <div class="input__group">
+                  <label for="message" class="form_label">MESSAGE</label>
+                  <textarea name="message" id="message" rows="3"></textarea>
+                  <span class="form_line"></span>
+                </div>
+              </div>
+              <div class="block">
+                <button type="submit" class="form_submit">SEND</button>
+                <span class="form_line"></span>
+              </div>
+            </div>
+            <div class="contact_moreinfo">
+              <div class="manager">
+                <h1>MÁNAGER:</h1>
+                <ul>
+                  <li>lorem ipsum</li>
+                  <li>Tel:123-456-789</li>
+                </ul>
+              </div>
+              <div class="contratacion">
+                <h1>ENGAGEMENT:</h1>
+                <ul>
+                  <li>lorem ipsum</li>
+                  <li>Tel:123-456-789</li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contenedor">
+        <h2>FOLLOW US IN:</h2>
+        <div class="redes">
+          <i class="fa-brands fa-twitter" href=""></i>
+          <i class="fa-brands fa-instagram" href=""></i>
+          <i class="fa-brands fa-spotify" href=""></i>
+          <i class="fa-brands fa-soundcloud" href=""></i>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".menu-icon").click(function () {
+          $("header nav").slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit";
+}
+
+.contenedor {
+  margin: auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+header {
+  background: black;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-image: url(../Images/band.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-y-menu {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.titular-banda {
+  color: black;
+  text-align: center;
+  margin-top: 30vh;
+}
+
+.titular-banda h1 {
+  padding-bottom: 30vh;
+  font-size: 80px;
+  color: black;
+}
+
+#banda .contenedor {
+  display: flex;
+  align-items: center;
+}
+
+#banda {
+  background-color: black;
+  color: white;
+}
+
+div.foto-banda {
+  padding-top: 4px;
+}
+
+.foto-banda img {
+  width: 100%;
+}
+
+.texto-banda h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.texto-banda p {
+  width: 70%;
+  height: 50vh;
+  margin: auto;
+}
+
+.texto-banda h4 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 60px;
+  background: #323232;
+  color: white;
+}
+
+footer i {
+  margin: 5px;
+  padding: 10px;
+  background-color: #212121;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
