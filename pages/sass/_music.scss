@@ -1,0 +1,77 @@
+#music {
+  background: #212121;
+  .contenedor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.contenedor {
+  .texto-ultimo {
+    h3 {
+      font-size: small;
+      line-height: 18px;
+    }
+    h3,
+    h2 {
+      padding: 10px 20px;
+      text-align: center;
+    }
+    h4 {
+      margin-top: 20px;
+      margin-left: 20px;
+      padding: 10px;
+      padding-left: 0px;
+      padding-right: 0px;
+      width: 125px;
+      background-color: white;
+      border-radius: 7px;
+      color: black;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  .foto-ultimo {
+    padding-top: 32px;
+    img {
+      width: 100%;
+      position: relative;
+      box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+#albums {
+  background: #212121;
+  color: white;
+  text-align: center;
+  padding: 60px 0px;
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px 24px;
+    padding: 20px;
+    h2 {
+      font-size: 13px;
+    }
+    img {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+      &:hover {
+        animation-name: hover;
+        animation-duration: 0.7s;
+        animation-fill-mode: both;
+      }
+
+      @keyframes hover {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-10px);
+        }
+      }
+    }
+  }
+}

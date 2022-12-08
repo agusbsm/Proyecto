@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kanit";
+  color: white;
 }
 
 .contenedor {
@@ -11,87 +12,58 @@
   width: 90%;
 }
 
+header {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(./pages/Images/index2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 6px;
+}
+
+li a:hover {
+  background-color: white;
+  color: #212121;
+  transition: 0.5s;
+  padding: 8px;
+  border-radius: 12px;
+}
+
 a {
   text-decoration: none;
-  color: white;
-}
-
-header {
-  background-image: linear-gradient(
-      8deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(/pages/Images/index.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-header .contenedor {
-  display: flex;
-  align-items: center;
-}
-
-p.logo {
-  margin: 0;
-  padding: 20px 30px;
-  font-weight: bold;
-  font-size: 1.35em;
-  color: white;
-}
-
-header nav {
-  display: flex;
-  text-align: center;
-}
-
-header a {
-  color: white;
-  padding: 5px 32px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.menu-icon {
-  cursor: pointer;
-}
-
-.boton {
-  color: black;
-  background-color: white;
-  padding: 24px 30px;
-  line-height: 10px;
+  margin: 12px;
 }
 
 .titular h1 {
   text-align: center;
-  color: white;
   margin-top: 30vh;
+  color: white;
+}
+
+.animate__animated {
+  transition: 4s;
 }
 
 .titular {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-}
-
-div.botones {
-  padding-bottom: 375px;
-}
-
-.botones a {
-  background: grey;
-  border-radius: 17px;
-  padding: 5px;
-}
-
-.music {
-  background: white !important;
-  color: #212121;
+  padding-bottom: 320px;
 }
 
 h1 {
@@ -102,11 +74,18 @@ h1 {
 #discography .contenedor {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 #discography {
   background: #212121;
   color: white;
+  box-shadow: 0 0 20px 0 rgba(20, 9, 9, 0.9);
+}
+
+#discography .texto-de-single {
+  padding-top: 20px;
 }
 
 #discography h4 {
@@ -114,10 +93,12 @@ h1 {
   padding: 10px;
   padding-left: 0px;
   padding-right: 0px;
-  background-color: yellow;
   width: 125px;
-  border-radius: 10px;
+  background-color: #ffe15d;
+  border-radius: 7px;
   color: black;
+  text-align: center;
+  font-size: 14px;
 }
 
 #discography h2 {
@@ -131,41 +112,22 @@ h1 {
 #discography h3 {
   font-size: small;
   line-height: 18px;
-  padding-right: 20px;
 }
 
 .foto-sencillo img {
   width: 100%;
-  padding: 20px 0;
+  position: relative;
 }
 
-#discography .texto-de-album {
-  width: 70%;
-}
-
-audio {
-  margin-left: 18px;
+.lastrelease {
+  background-color: white;
+  margin: 20px 0px;
+  border-radius: 15px;
 }
 
 #aboutus {
   padding: 75px 0;
-}
-
-.cajas-de-textos {
-  display: flex;
-}
-
-.caja-de-texto-1 p {
-  padding-top: 1rem;
-  padding-right: 2rem;
-}
-
-.caja-de-texto-1 h2 {
-  padding-top: 1rem;
-}
-
-.caja-de-texto-2 {
-  padding-top: 67px;
+  box-shadow: 0 0 20px 0 rgba(20, 9, 9, 0.9);
 }
 
 #aboutus h4 {
@@ -179,31 +141,73 @@ audio {
   border-radius: 10px;
 }
 
-div.botones2 {
-  padding-top: 10px;
+.cajas-de-textos {
+  display: flex;
 }
 
-div.botones2 a {
-  border-radius: 10px;
-  border: 1px solid;
+.caja-de-texto-1 p {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  color: #212121;
+}
+
+.cajas-de-textos h2 {
+  padding-top: 1rem;
+  color: #212121;
+}
+
+.caja-de-texto-2 {
+  padding-top: 67px;
+}
+
+.caja-de-texto-2 p {
+  color: #212121;
+}
+
+.botones button {
   background-color: #212121;
-  border-color: black;
-  padding: 4px;
-  margin: 8px;
+  cursor: pointer;
+  margin: 30px 0px 0px 30px;
+  height: 50px;
+  border: none;
+  transition: 3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.botones button::after {
+  content: " ";
+  width: 97%;
+  height: 90%;
+  background-color: white;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease-in-out all;
+}
+
+.botones button:hover::after {
+  top: 0px;
+  border: 2px solid #212121;
+}
+
+button a {
+  z-index: 2;
+  position: relative;
+  transition: 0.3s ease all;
+  padding: 20px;
+  margin: 0;
+}
+
+button a:hover {
+  color: #212121;
 }
 
 #news {
-  padding: 60px 0;
+  padding: 30px 0;
   background: #323232;
-}
-
-#news .contenedor {
-  display: flex;
-}
-
-.foto {
-  width: 100%;
-  display: flex;
 }
 
 #news h4 {
@@ -219,12 +223,13 @@ div.botones2 a {
 }
 
 div.signup {
-  color: white;
   padding: 0 40px;
 }
 
-div.signup p {
-  padding: 20px 0;
+div.signup h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .formulario form {
@@ -233,9 +238,13 @@ div.signup p {
   padding: 4.5em 3em;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 30%);
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 30%);
   color: black;
   text-align: center;
+}
+
+.formulario h2 {
+  color: #212121;
 }
 
 .contenedor-formulario {
@@ -297,6 +306,7 @@ div.signup p {
 
 .form_submit:hover {
   background-color: grey;
+  color: #323232;
   transition: 0.8s;
 }
 
@@ -319,7 +329,7 @@ div.signup p {
 
 footer {
   text-align: center;
-  padding: 60px;
+  padding: 30px;
   background: #323232;
   color: white;
 }
@@ -335,72 +345,121 @@ footer i {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
+.btn-redes,
+a {
+  margin: 0px;
+  padding: 4px;
+}
+
+@media (max-width: 800px) {
   header .contenedor {
-    justify-content: space-between;
+    width: 100%;
   }
 
-  nav {
+  p {
+    font-size: 14px;
+  }
+
+  .contenedor > * {
+    padding: 1em;
+  }
+
+  .nav {
     flex-direction: column;
-    background-color: rgb(245, 245, 245);
-    width: 90%;
-    position: absolute;
-    top: 60px;
+    background-color: #323232;
   }
 
-  nav a {
-    color: black;
+  .nav h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .nav ul {
+    text-align: center;
+  }
+
+  .titular {
+    padding: 250px 0px !important;
   }
 
   .titular h1 {
-    font-size: 36px;
+    margin-top: auto;
+    font-size: 30px;
   }
 
-  #discography .contenedor {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  #discography h4 {
+    margin: 0px 95px;
   }
 
-  #discography,
-  h2 {
-    font-size: 33px !important;
-  }
-
-  #discrography,
-  .texto-de-album h4 {
-    font-size: 16px;
-    margin: 16px !important;
-    margin-left: 55px !important;
-  }
-
-  .foto-sencillo img {
-    width: 100%;
-    padding: 20px 40px;
+  .lastrelease {
+    padding: 1px;
+    margin: 10px 0px 40px 0px;
+    border-radius: 0;
+    box-shadow: 0 0 20px 0 rgba(20, 9, 9, 0.9);
   }
 
   #aboutus {
-    padding: 20px;
+    padding: 8px;
   }
 
   #aboutus h4 {
-    margin-left: 85px;
+    margin: 0px 102px;
   }
 
-  div .botones2 {
-    display: inline-grid;
-    justify-items: start;
+  .cajas-de-textos {
+    flex-direction: column;
   }
 
-  #news .contenedor {
-    flex-flow: column wrap;
+  .caja-de-texto-1 p {
+    padding-right: 0;
   }
 
-  #news h2 {
-    font-size: 20px;
+  .caja-de-texto-2 {
+    padding-top: 18px;
   }
 
-  .formulario h2 {
-    font-size: 2rem;
+  .cajas-de-textos h2 {
+    padding-top: 0;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  button {
+    margin: 20px 0 0 !important;
+    margin-right: 0px !important;
+    height: 38px;
+  }
+
+  button a {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #news {
+    padding: 12px 0px 32px;
+  }
+
+  #news h4 {
+    margin: 20px 70px;
+  }
+
+  .singup,
+  h2 {
+    font-size: 16px;
+  }
+
+  .formulario form {
+    padding: 0.5em 0.5em 1.5em 0.5em;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  footer h2 {
+    padding: 0 !important;
+  }
+
+  .redes {
+    padding-top: 10px;
   }
 }

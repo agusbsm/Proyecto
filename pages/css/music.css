@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kanit";
+  color: white;
 }
 
 .contenedor {
@@ -19,55 +20,51 @@ header {
     ),
     url(/pages/Images/music.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  margin: 12px;
 }
 
 li {
   list-style: none;
+  display: inline-block;
+  padding: 6px;
 }
 
-nav ul {
-  display: flex;
+li a:hover {
+  background-color: white;
+  color: #212121;
+  transition: 0.5s;
+  padding: 8px;
+  border-radius: 12px;
 }
 
-nav ul li {
-  margin: 20px;
-}
-
-nav ul li a {
-  color: white;
-}
-
-.menu {
+.nav {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
+  max-width: 992px;
+  margin: 0 auto;
 }
 
-.logo-y-menu {
-  display: flex;
-  align-items: center;
-  height: 60px;
-}
-
-.titularmusica {
+.titular h1 {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+  margin-top: 30vh;
+  color: white;
+  font-size: 60px;
 }
 
-.titularmusica h1 {
-  padding-bottom: 25vh;
-  font-size: 80px;
-  color: white;
+.animate__animated {
+  transition: 4s;
+}
+
+.titular {
+  text-align: center;
+  padding-bottom: 320px;
 }
 
 #music {
@@ -75,50 +72,79 @@ nav ul li a {
 }
 
 #music .contenedor {
-  color: white;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .foto-ultimo {
-  padding-top: 4px;
+  padding-top: 32px;
+}
+
+.foto-ultimo img {
+  box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.8);
 }
 
 #music h4 {
-  padding: 4px 22px;
-  background: rgb(245, 245, 245);
-  color: #212121;
+  margin-left: 20px;
+  padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   width: 125px;
-  font-size: 20px;
-  border-radius: 12px;
-  margin: 20px;
-  margin-bottom: 15px;
-  margin-top: 2px;
+  background-color: white;
+  border-radius: 7px;
+  color: black;
+  text-align: center;
+  font-size: 14px;
 }
 
 #music h3,
 div.texto-ultimo h2 {
-  line-height: 26px;
   padding: 10px 20px;
+  text-align: center;
+}
+
+.texto-ultimo {
+  margin-top: 20px;
 }
 
 #music h3 {
-  font-size: 20px;
+  font-size: small;
+  line-height: 18px;
 }
 
 #music img {
   width: 100%;
+  position: relative;
 }
 
-audio {
-  margin: 20px 0;
-}
-
-#tour {
+#albums {
   background: #212121;
   color: white;
   text-align: center;
-  padding: 60px;
+  padding: 60px 0px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 60px 24px;
+  padding: 20px;
+}
+
+.grid-layout h2 {
+  font-size: 13px;
+}
+
+.grid-layout img {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+}
+
+img:hover {
+  animation-name: hover;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
 }
 
 footer {
@@ -137,4 +163,86 @@ footer i {
   height: 36px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.btn-redes,
+a {
+  margin: 0px;
+  padding: 4px;
+}
+
+@keyframes hover {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 800px) {
+  header .contenedor {
+    width: 100%;
+  }
+
+  .contenedor > * {
+    padding: 1em;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .nav {
+    flex-direction: column;
+    background-color: #323232;
+  }
+
+  .nav h2 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .nav ul {
+    text-align: center;
+  }
+
+  .titular {
+    padding: 250px 0px !important;
+  }
+
+  .titular h1 {
+    margin-top: auto;
+    font-size: 30px;
+  }
+
+  #music .contenedor {
+    flex-direction: column;
+  }
+
+  #music h4 {
+    margin-left: 84px !important;
+  }
+
+  #albums {
+    padding: 30px 0px;
+  }
+
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-layout h2 {
+    font-size: 16px;
+    width: 98%;
+    margin-left: 3px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  footer h2 {
+    padding: 0 !important;
+  }
 }

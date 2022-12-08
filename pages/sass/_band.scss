@@ -1,0 +1,30 @@
+#banda {
+  background-color: black;
+  color: white;
+  .contenedor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .texto-banda {
+    h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+    h4 {
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      height: 30vh;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  .foto-banda {
+    margin-bottom: 30px;
+    img {
+      box-shadow: 0 0 20px 0 rgba(117, 115, 115, 0.5);
+    }
+  }
+}

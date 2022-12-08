@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kanit";
+  color: white;
 }
 
 .contenedor {
@@ -12,68 +13,65 @@
 }
 
 header {
-  background: black;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/pages/Images/band.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-nav ul {
-  list-style: none;
+.nav {
   display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  max-width: 992px;
+  margin: 0 auto;
 }
 
-nav li {
-  margin: 20px;
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 6px;
+}
+
+li a:hover {
+  background-color: white;
+  color: #212121;
+  transition: 0.5s;
+  padding: 8px;
+  border-radius: 12px;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  margin: 12px;
 }
 
-header {
-  background-image: url(../Images/band.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.titular {
+  text-align: center;
+  padding-bottom: 320px;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-}
-.logo-y-menu {
-  display: flex;
-  align-items: center;
-  height: 60px;
-}
-
-.titular-banda {
-  color: black;
+.titular h1 {
   text-align: center;
   margin-top: 30vh;
-}
-
-.titular-banda h1 {
-  padding-bottom: 30vh;
-  font-size: 80px;
-  color: black;
+  color: white;
+  font-size: 60px;
 }
 
 #banda .contenedor {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 #banda {
   background-color: black;
   color: white;
-}
-
-div.foto-banda {
-  padding-top: 4px;
-}
-
-.foto-banda img {
-  width: 100%;
 }
 
 .texto-banda h1 {
@@ -82,14 +80,22 @@ div.foto-banda {
 }
 
 .texto-banda p {
-  width: 70%;
-  height: 50vh;
-  margin: auto;
+  height: 30vh;
+  font-size: 16px;
+  text-align: center;
 }
 
 .texto-banda h4 {
   padding-bottom: 20px;
   text-align: center;
+}
+
+.foto-banda {
+  margin-bottom: 30px;
+}
+
+img {
+  box-shadow: 0 0 20px 0 rgba(117, 115, 115, 0.5);
 }
 
 footer {
@@ -108,4 +114,67 @@ footer i {
   height: 36px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.btn-redes,
+a {
+  margin: 0px;
+  padding: 4px;
+}
+
+@media (max-width: 800px) {
+  header .contenedor {
+    width: 100%;
+  }
+
+  .contenedor > * {
+    padding: 1em;
+  }
+
+  .nav {
+    flex-direction: column;
+    background-color: #323232;
+  }
+
+  .nav h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .nav ul {
+    text-align: center;
+  }
+
+  .titular {
+    padding: 250px 0px !important;
+  }
+
+  .titular h1 {
+    margin-top: auto;
+    font-size: 30px;
+  }
+
+  .texto-banda h1 {
+    font-size: 20px;
+  }
+
+  .texto-banda h4 {
+    font-size: 12px;
+  }
+
+  .texto-banda p {
+    font-size: 11px;
+  }
+
+  .foto-banda {
+    margin: 0;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  footer h2 {
+    padding: 0 !important;
+  }
 }

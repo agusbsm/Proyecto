@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>The Neighbourhood\</title>
     <link rel="shortcut icon" href="./Images/favicon.png" />
-    <link rel="stylesheet" href="./css/band.css" />
+    <link rel="stylesheet" href="../hojanueva.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script
       src="https://kit.fontawesome.com/b656898017.js"
@@ -19,23 +23,21 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="headerband">
       <div class="contenedor">
-        <div class="menu">
-          <div class="logo-y-menu">
-            <img src="./Images/logonbhd.png" alt="" width="160px" />
-            <nav>
-              <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="music.html">MUSIC</a></li>
-                <li><a href="band.html">THE BAND</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-              </ul>
-            </nav>
-          </div>
+        <div class="nav">
+          <h2>THE NBHD</h2>
+          <nav>
+            <ul>
+              <li><a href="/index.html">HOME</a></li>
+              <li><a href="/pages/music.html">MUSIC</a></li>
+              <li><a href="/pages/band.html">THE BAND</a></li>
+              <li><a href="/pages/contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="titular-banda">
-          <h1>OUR BAND</h1>
+        <div class="titular">
+          <h1 class="animate__animated animate__fadeInUp">THE BAND</h1>
         </div>
       </div>
     </header>
@@ -46,26 +48,49 @@
           <h4>A ALTERNATIVE ROCK/POP BAND</h4>
           <h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-              cumque, quae adipisci consequatur a deserunt eum architecto
-              delectus accusantium esse laudantium, error magni minima ipsum
-              dolore rerum, labore commodi! Rem? lorem
+              They chose the British spelling of "neighbourhood" on the advice
+              of their manager, in order to distinguish themselves from a band
+              that already used the American word "neighborhood". In early 2012,
+              the band released "Female Robbery" and "Sweater Weather". Our
+              band's debut album, I Love You., was released on April 23, 2013
+              and entered at number thirty-nine on the Billboard 200 chart.
+              Rolling Stone had already released I Love You. on April 16 on
+              their website, describing it as "atmospheric." In April 2014,
+              THENBHD released "Honest", which is part of the soundtrack for The
+              Amazing Spider-Man 2: Rise of Electro (2014). We then released a
+              mixtape titled #000000 & #FFFFFF (the HTML color codes for black
+              and white) in November 2014. That same year, they announced via
+              twitter that "Sweater Weather" was certified platinum in the US.
             </p>
           </h3>
         </div>
         <div class="foto-banda">
-          <img src="./Images/theneighbourhood.webp" alt="" />
+          <img src="./Images/band2.jpg" width="400px" height="300px" alt="" />
         </div>
       </div>
     </section>
     <footer>
       <div class="contenedor">
-        <h2>FOLLOW US IN:</h2>
+        <h2>FOLLOW IN:</h2>
         <div class="redes">
-          <i class="fa-brands fa-twitter" href=""></i>
-          <i class="fa-brands fa-instagram" href=""></i>
-          <i class="fa-brands fa-spotify" href=""></i>
-          <i class="fa-brands fa-soundcloud" href=""></i>
+          <a class="btn-redes" href="https://twitter.com/thenbhd">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="btn-redes" href="https://www.instagram.com/thenbhd/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            class="btn-redes"
+            href="https://open.spotify.com/artist/77SW9BnxLY8rJ0RciFqkHh"
+          >
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+          <a
+            class="btn-redes"
+            href="https://es-la.facebook.com/TheNeighbourhood/"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
         </div>
       </div>
     </footer>

@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>The Neighbourhood</title>
     <link rel="shortcut icon" href="./Images/favicon.png" />
-    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="/hojanueva.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script
       src="https://kit.fontawesome.com/b656898017.js"
@@ -19,34 +23,32 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="headercontact">
       <div class="contenedor">
-        <p class="logo">THE NEIGHBOURHOOD</p>
-        <img
-          class="menu-icon"
-          src="/pages/Images/menumobile.png"
-          alt=""
-          width="40px"
-        />
-        <nav>
-          <a href="/index.html">HOME</a>
-          <a href="music.html">MUSIC</a>
-          <a href="band.html">THE BAND</a>
-          <a href="contact.html">CONTACT</a>
-        </nav>
-      </div>
-      <div class="titular">
-        <h1>CONTACT</h1>
+        <div class="nav">
+          <h2>THE NBHD</h2>
+          <nav>
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="/pages/music.html">MUSIC</a></li>
+              <li><a href="/pages/band.html">THE BAND</a></li>
+              <li><a href="/pages/contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="titular">
+          <h1 class="animate__animated animate__fadeInUp">CONTACT</h1>
+        </div>
       </div>
     </header>
     <section id="datos">
       <div class="contenedor">
         <div class="contact">
-          <h3>CONTACT US</h3>
+          <h3>CONTACT US :</h3>
           <form action="" class="form_contact" name="form_contact">
             <div class="contenedor_form">
               <div class="input__group">
-                <label for="name" class="form_label">FULL NAME</label>
+                <label for="name" class="form_label">FULL NAME :</label>
                 <input
                   type="text"
                   class="form_input"
@@ -57,7 +59,7 @@
               </div>
 
               <div class="input__group">
-                <label for="mail" class="form_label">EMAIL ADRESS</label>
+                <label for="mail" class="form_label">EMAIL ADRESS :</label>
                 <input
                   type="email"
                   class="form_input"
@@ -68,7 +70,7 @@
                 <span class="form_line"></span>
               </div>
               <div class="input__group">
-                <label for="phone" class="form_label">PHONE NUMBER</label>
+                <label for="phone" class="form_label">PHONE NUMBER :</label>
                 <input
                   type="tel"
                   class="form_input"
@@ -79,7 +81,7 @@
                 <span class="form_line"></span>
               </div>
               <div class="input__group">
-                <label for="country" class="form_label">COUNTRY</label>
+                <label for="country" class="form_label">COUNTRY :</label>
                 <input
                   type="text"
                   class="form_input"
@@ -90,7 +92,7 @@
                 <span class="form_line"></span>
               </div>
               <div class="input__group">
-                <label for="city" class="form_label">CITY</label>
+                <label for="city" class="form_label">CITY :</label>
                 <input
                   type="text"
                   class="form_input"
@@ -102,7 +104,7 @@
               </div>
               <div class="block">
                 <div class="input__group">
-                  <label for="message" class="form_label">MESSAGE</label>
+                  <label for="message" class="form_label">MESSAGE :</label>
                   <textarea name="message" id="message" rows="3"></textarea>
                   <span class="form_line"></span>
                 </div>
@@ -110,22 +112,6 @@
               <div class="block">
                 <button type="submit" class="form_submit">SEND</button>
                 <span class="form_line"></span>
-              </div>
-            </div>
-            <div class="contact_moreinfo">
-              <div class="manager">
-                <h1>MÁNAGER:</h1>
-                <ul>
-                  <li>lorem ipsum</li>
-                  <li>Tel:123-456-789</li>
-                </ul>
-              </div>
-              <div class="contratacion">
-                <h1>ENGAGEMENT:</h1>
-                <ul>
-                  <li>lorem ipsum</li>
-                  <li>Tel:123-456-789</li>
-                </ul>
               </div>
             </div>
           </form>
@@ -136,25 +122,26 @@
       <div class="contenedor">
         <h2>FOLLOW US IN:</h2>
         <div class="redes">
-          <i class="fa-brands fa-twitter" href=""></i>
-          <i class="fa-brands fa-instagram" href=""></i>
-          <i class="fa-brands fa-spotify" href=""></i>
-          <i class="fa-brands fa-soundcloud" href=""></i>
+          <a class="btn-redes" href="https://twitter.com/thenbhd">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="btn-redes" href="https://www.instagram.com/thenbhd/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            class="btn-redes"
+            href="https://open.spotify.com/artist/77SW9BnxLY8rJ0RciFqkHh"
+          >
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+          <a
+            class="btn-redes"
+            href="https://es-la.facebook.com/TheNeighbourhood/"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
         </div>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      $(document).ready(function () {
-        $(".menu-icon").click(function () {
-          $("header nav").slideToggle();
-        });
-      });
-    </script>
   </body>
 </html>

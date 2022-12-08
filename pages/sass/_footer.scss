@@ -1,0 +1,22 @@
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #323232;
+  color: white;
+  i {
+    margin: 5px;
+    padding: 10px;
+    background-color: #212121;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .btn-redes,
+  a {
+    margin: 0px;
+    padding: 4px;
+    text-decoration: none;
+  }
+}
