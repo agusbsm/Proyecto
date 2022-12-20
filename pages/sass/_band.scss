@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
   }
   .texto-banda {
     h1 {
@@ -16,15 +17,55 @@
       text-align: center;
     }
     p {
-      height: 30vh;
-      font-size: 16px;
+      font-size: 14px;
       text-align: center;
     }
   }
   .foto-banda {
-    margin-bottom: 30px;
+    margin: 50px;
     img {
       box-shadow: 0 0 20px 0 rgba(117, 115, 115, 0.5);
+    }
+  }
+}
+
+#integrantes {
+  background-color: black;
+  padding-bottom: 56px;
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px 40px;
+    padding: 20px;
+    img {
+      width: 100%;
+      margin: 0px 0px 20px 0px;
+      vertical-align: middle;
+    }
+    div {
+      background-color: #ffff;
+      padding: 1.5em;
+      border-radius: 20px 20px 20px 0;
+      font-size: 20px;
+      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 10%);
+    }
+    p {
+      color: black;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    span {
+      color: #ffff;
+      background-color: black;
+      margin-right: 5px;
+      padding: 0 10px;
+      border-radius: 5px;
     }
   }
 }

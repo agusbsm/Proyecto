@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/b656898017.js"
       crossorigin="anonymous"
@@ -26,13 +27,17 @@
     <header class="headerband">
       <div class="contenedor">
         <div class="nav">
-          <h2>THE NBHD</h2>
+          <a href="../index.html">
+            <h2>THE NBHD</h2>
+          </a>
           <nav>
             <ul>
               <li><a href="../index.html">HOME</a></li>
-              <li><a href="./music.html">MUSIC</a></li>
-              <li><a href="./band.html">THE BAND</a></li>
-              <li><a href="./contact.html">CONTACT</a></li>
+              <li><a href="../pages/music.html">MUSIC</a></li>
+              <li><a href="../pages/band.html">THE BAND</a></li>
+              <li>
+                <a href="../pages/contact.html">CONTACT</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -69,6 +74,86 @@
         </div>
       </div>
     </section>
+    <section id="integrantes">
+      <div class="contenedor">
+        <h2>MEMBERS</h2>
+        <div class="grid-layout">
+          <div class="jesse" data-aos="fade-right">
+            <img src="./Images/jesserutherford.jpg" alt="jesserutherford" />
+            <p>
+              <span>Instrument :</span>
+              Voice, Guitar, and drums.
+            </p>
+            <p>
+              Jesse James Rutherford (Newbury Park, California, United States,
+              August 21, 1991) is an American singer, rapper, and actor, known
+              for being the vocalist and leader of the band The Neighborhood. At
+              the beginning of 2011, Jesse released "Truth hurts, truth heals",
+              his first solo mixtape, where he demonstrates his skills as a
+              rapper, as he did simultaneously with The Good Boys, the duo he
+              was part of with Jez Dior. In August of that same year, together
+              with guitarists Jeremy Freedman and Zach Abels, drummer Bryan
+              Sammis and bassist Mikey Margott, he formed The Neighborhood.
+            </p>
+          </div>
+          <div class="jeremy" data-aos="fade-left">
+            <img src="./Images/jeremyfreedman.jpg" alt="jeremyfreedman" />
+            <p>
+              <span>Instrument :</span>
+              Guitar and Chorus.
+            </p>
+            <p>
+              Jeremiah Allen Freedman is an American artist who is a member of
+              the band The Neighbourhood. He is one of the band's two
+              guitarists, as well as a background vocalist. Jeremy is a
+              guitarist and background singer for the rock band The
+              Neighbourhood who are best known for their debut album I Love
+              You.. Freedman and his fellow band members came together in 2011,
+              he and the band released their debut extended play (EP) I'm
+              Sorry... in May of 2012.
+            </p>
+          </div>
+          <div class="zach" data-aos="fade-right">
+            <img src="./Images/zachabels.jpg" alt="zacharyAbels" />
+            <p>
+              <span>Instrument :</span>
+              Guitar and Chorus.
+            </p>
+            <p>
+              Zachary Shane Abels (Simi Valley, California, United States, July
+              3, 1992) is an American artist who is a member of the band "The
+              Neighborhood", known for their debut album I Love You. . He joined
+              the band to form in August 2011. They didn't officially release
+              anything until May 7, 2012 when their Sorry EP became available.
+              He is one of the two guitarists in the band. Abels and his fellow
+              band members came together in 2011, he and the band released a
+              debut EP called I'm Sorry...; in May 2012. The album featured
+              their hit single "Sweater Weather, America's Highest Hit which
+              reached number 1 on the Billboard Alternative Songs chart. Debut
+              album I Love You charted at number 25 on the Billboard Top 200
+              chart. The album featured the single "Sweater Weather"
+            </p>
+          </div>
+          <div class="michael" data-aos="fade-left">
+            <img src="./Images/michaelmargott.jpg" alt="michaelmargott" />
+            <p>
+              <span>Instrument :</span>
+              Bass and Chorus.
+            </p>
+            <p>
+              Mikey is the bass guitarist for the rock band The Neighbourhood
+              whose best known for their debut album I Love You.. Mikey and his
+              fellow band members came together in 2011, he and the band
+              released their debut extended play (EP), I'm Sorry...; in May of
+              2012. The album featured their hit single Sweater Weather, which
+              reached #1 on the Billboard Alternative Songs chart. He and the
+              guitarist, Zach Abels, were both founding members of The
+              Neighborhood.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="contenedor">
         <h2>FOLLOW IN:</h2>
@@ -94,5 +179,11 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
   </body>
 </html>
